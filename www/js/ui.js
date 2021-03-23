@@ -2,6 +2,17 @@ $( function() {
 
 	//visual INITS
 
+		// get LIGHT/DARK last setting
+		var dispMode = localStorage.getItem('dispMode')
+		console.log(dispMode);
+		if (dispMode == "DARK") {
+			$('html').removeClass('LIGHT');
+			$('html').addClass('DARK');
+		} else {
+			$('html').removeClass('DARK');
+			$('html').addClass('LIGHT');
+		}
+
 	$('#miner-active').hide();
 	$('#miner-inactive').show();
 	setTimeout(function(){
@@ -20,6 +31,11 @@ $( function() {
 	$('#light-dark-toggle').click(function(){
 		$('html').toggleClass('LIGHT');
 		$('html').toggleClass('DARK');
+		if ($('html').hasClass('LIGHT')) {
+			localStorage.setItem('dispMode','LIGHT');
+		} else {
+			localStorage.setItem('dispMode','DARK');
+		}
 	});
 
 	$('#btn-payout-history').click(function(){
