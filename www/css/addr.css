@@ -5,7 +5,7 @@
 */
 
 * {
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 
 html, body {
@@ -122,8 +122,8 @@ body {
 		align-self: auto;
 	}
 	.icons {
-		order: 1;
-		flex: 0 1 auto;
+		order: 0;
+		flex: 0 0 auto;
 		align-self: auto;
 	}
 	.tabs .title {
