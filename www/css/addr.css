@@ -157,6 +157,11 @@ body {
 		box-shadow: 0 4px 14px 0 rgba(0,0,0,0.50);
 		border-radius: 4px;
 		padding: 10px;
+		margin-bottom: 20px;
+	}
+	.card .title {
+		font-size: 1.1em;
+		font-weight: bold;
 	}
 	.LIGHT .card, .DARK .card.chart {
 		background: #fff;
@@ -216,19 +221,10 @@ body {
 
 /* LINKS */
 
-	a.rvn-wallet {
-		color: #fff;
-		position: relative;
-		text-decoration: none;
-	}
-	a.rvn-wallet img {
-		margin: 0px 4px;
-		opacity: 0.45;
-	}
-	a.rvn-wallet::AFTER {
+	a.rvn-wallet::BEFORE, a.rvn-txid::BEFORE {
 		content:"";
 		z-index: -1;
-		display: inline-block;
+		display: block;
 		position: absolute;
 		top: -3px;
 		left: -5px;
@@ -236,6 +232,16 @@ body {
 		bottom: -3px;
 		border-radius: 2px;
 		background-color: rgba(0,0,0,0.35);
+	}
+	a.rvn-wallet, a.rvn-txid {
+		z-index: 1;
+		color: #fff;
+		position: relative;
+		text-decoration: none;
+	}
+	a.rvn-wallet img, a.rvn-txid img {
+		margin: 0px 4px;
+		opacity: 0.45;
 	}
 
 	/* CHARTS */
