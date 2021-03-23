@@ -21,6 +21,13 @@ html, body {
 	*/
 }
 
+body {
+	background-image: url('../img/bg-wave-colour.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 /* RavenMiner MAIN.CSS */
 
 	/* ADDED TYPOGRAPHY STYLES */
@@ -242,11 +249,11 @@ html, body {
 
 	.LIGHT body {
 		color: #2b2b2b;
-		background: #fff;
+		background-color: #fff;
 	}
 	.DARK body {
 		color: #fff;
-		background: #2b2b2b;
+		background-color: #2b2b2b;
 	}
 	.DARK code {
 		background: #5b5b5b;
