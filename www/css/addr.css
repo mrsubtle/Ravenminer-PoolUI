@@ -1,0 +1,267 @@
+/*
+-- by RVNart (@smiling_monkee u/RVNart)
+-- v0.1
+-- Donate: RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+	/*
+	Available:
+	ROBOTO Light 300, Medium 500
+	ROBOTO MONO Light 300, Medium 500
+	*/
+}
+
+/* RavenMiner MAIN.CSS */
+
+	/* ADDED TYPOGRAPHY STYLES */
+
+	.txt-mono {
+		font-family: 'Roboto Mono', monospace;
+	}
+	.txt-wallet-blance {
+		font-size: 3.3em;
+		font-weight: 600;
+	}
+	.txt-wallet-blance-currency {
+		font-size: 2.7em;
+		font-weight: 600;
+	}
+	.txt-wallet-ID {
+		font-size: 1em;
+	}
+	.txt-right {
+		text-align: right;
+	}
+	.txt-center {
+		text-align: center;
+	}
+
+	/* ICONS */
+	.icon-inline {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+	}
+	.icon {
+    width: 50px;
+		height: 50px;
+		padding: 0;
+		margin: 0;
+		line-height: 50px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+	.icon img {
+		padding: 0;
+		margin: 0;
+		flex: 0 1 auto;
+		align-self: auto;
+	}
+
+	/* Main CONTENT elements -- miner-inactive | miner-active */
+
+	.content {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+/* Page Elements */
+
+	.menu {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		align-items: flex-start;
+		cursor: default;
+	}
+	.tabs, .icons {
+		margin: 0;
+		padding: 0;
+		line-height: 50px;
+		font-weight: normal;
+	}
+	.tabs {
+		order: 0;
+		flex: 1 1 auto;
+		align-self: auto;
+	}
+	.icons {
+		order: 1;
+		flex: 0 1 auto;
+		align-self: auto;
+	}
+	.tabs .title {
+		font-weight: bold;
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.tabs .tab {
+		font-weight: normal;
+		height: 50px;
+		display: inline-block;
+		line-height: inherit;
+		padding: 0 10px;
+	}
+	.tabs .tab.active {
+		font-weight: bold;
+		background-color: rgba(255,255,255,0.15);
+	}
+
+	#wallet-overview {
+		margin: 70px 0px 40px 0px;
+	}
+	#wallet-balance-change {
+		font-weight: bold;
+		color: #3BD78A;
+	}
+
+/* CARDS */
+
+	.card {
+		box-shadow: 0 4px 14px 0 rgba(0,0,0,0.50);
+		border-radius: 4px;
+		padding: 10px;
+	}
+	.LIGHT .card, .DARK .card.chart {
+		background: #fff;
+	}
+	.DARK .card {
+		background: #111;
+	}
+
+/* BUTTONS */
+	.LIGHT .button {
+		color: #2b2b2b;
+	}
+	.button.button-primary,
+	button.button-primary,
+	input[type="submit"].button-primary,
+	input[type="reset"].button-primary,
+	input[type="button"].button-primary {
+		color: #fff;
+	  background-color: #2b2b2b;
+	  border-color: #3b3b3b; }
+	.button.button-primary:hover,
+	button.button-primary:hover,
+	input[type="submit"].button-primary:hover,
+	input[type="reset"].button-primary:hover,
+	input[type="button"].button-primary:hover,
+	.button.button-primary:focus,
+	button.button-primary:focus,
+	input[type="submit"].button-primary:focus,
+	input[type="reset"].button-primary:focus,
+	input[type="button"].button-primary:focus {
+		color: #fff;
+	  background-color: #2b2b2b;
+	  border-color: #3b3b3b;
+		opacity: 0.75;}
+
+		.DARK .button.button-primary,
+		.DARK button.button-primary,
+		.DARK input[type="submit"].button-primary,
+		.DARK input[type="reset"].button-primary,
+		.DARK input[type="button"].button-primary {
+			color: #2b2b2b;
+		  background-color: #fff;
+		  border-color: #fbfbfb; }
+		.DARK .button.button-primary:hover,
+		.DARK button.button-primary:hover,
+		.DARK input[type="submit"].button-primary:hover,
+		.DARK input[type="reset"].button-primary:hover,
+		.DARK input[type="button"].button-primary:hover,
+		.DARK .button.button-primary:focus,
+		.DARK button.button-primary:focus,
+		.DARK input[type="submit"].button-primary:focus,
+		.DARK input[type="reset"].button-primary:focus,
+		.DARK input[type="button"].button-primary:focus {
+			color: #2b2b2b;
+		  background-color: #fff;
+		  border-color: #fbfbfb; }
+
+/* LINKS */
+
+	a.rvn-wallet {
+		color: #fff;
+		position: relative;
+		text-decoration: none;
+	}
+	a.rvn-wallet img {
+		margin: 0px 4px;
+		opacity: 0.45;
+	}
+	a.rvn-wallet::AFTER {
+		content:"";
+		z-index: -1;
+		display: inline-block;
+		position: absolute;
+		top: -3px;
+		left: -5px;
+		right: -5px;
+		bottom: -3px;
+		border-radius: 2px;
+		background-color: rgba(0,0,0,0.35);
+	}
+
+	/* CHARTS */
+
+	canvas.chart {
+		width: 100%;
+		background: #fff;
+	}
+
+/* LIGHT/DARK GENERAL THEMES */
+
+	.LIGHT body {
+		color: #2b2b2b;
+		background: #fff;
+	}
+	.DARK body {
+		color: #fff;
+		background: #2b2b2b;
+	}
+	.DARK code {
+		background: #5b5b5b;
+		border: 1px solid #3b3b3b;
+	}
+
+	.LIGHT a, .DARK a {
+		color: #fff;
+	}
+
+	.LIGHT .menu {
+	    color: #fff;
+	    background: #904960;
+	}
+	.DARK .menu {
+	    color: #fff;
+	    background: rgba(0,0,0,0.35);
+	}

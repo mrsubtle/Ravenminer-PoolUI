@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9>" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js LIGHT" lang="en-US" dir="ltr"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>RavenMiner - RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK</title>
+	  <meta name="description" content="RavenMiner Pool Wallet">
+	  <meta name="author" content="u/RVNart">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- TYPOGRAPHY -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" type="text/css" href="css/addr.css" />
+		<!-- JS -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+		<script type="text/javascript" src="js/ui.js"></script>
+		<script type="text/javascript" src="js/charts.js"></script>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+	</head>
+
+	<body class="page">
+		<div class="menu">
+			<div class="tabs">
+				<div class="icon-inline">
+					<div class="icon">
+						<img src="img/icon_RVN.svg" width="24" height="18" alt="RVN" />
+					</div>
+				</div>
+				<div class="title">RavenMiner</div>
+				<div class="tab">
+					<a href="/">Home</a>
+				</div>
+				<div class="tab">
+					<a href="/site/mining">Pool</a>
+				</div>
+				<div class="tab active">
+					<a href="/?address=RAGEErQS8q7ZjhaqFPuLc1eE9iSszFNXaL">Wallet</a>
+				</div>
+				<div class="tab">
+					<a href="/site/kawpow">KawPow</a>
+				</div>
+				<div class="tab">
+					<a href="/site/howto">How To</a>
+				</div>
+				<div class="tab">
+					<a href="/stats">Graphs</a>
+				</div>
+				<div class="tab">
+					<a href="https://changenow.io/?exchange?link_id=ad7ad7b3a0910d?amount=1&amp;from=btc&amp;to=rvn">Exchange</a>
+				</div>
+				<div class="tab">
+					<a href="/site/terms">Terms of Use</a>
+				</div>
+			</div>
+			<div class="icons">
+				<div class="icon" id="light-dark-toggle">
+					<img src="img/icon_light-dark-toggle.svg" width="24" height="20" alt="Toggle Light/Dark Mode" />
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div id="miner-inactive" class="container">
+				<div class="row">
+					<div class="twelve columns">
+						<p>
+							<strong>No one is mining at this address... yet.</strong>
+						</p>
+						<p>
+							If your miner can't connect to regular ports, try using protected (SSL) port <strong>13838</strong>. For example:<br/>
+							<code>
+								stratum+ssl://stratum.ravenminer.com:13838
+							</code>
+						</p>
+						<p>
+							Just an FYI, it can take up to 10 minutes to display your first share on the pool.
+						</p>
+						<p>
+							If you're looking for help to setup your miner, visit the <a class="button button-primary" href="#">How To</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="miner-active" class="container">
+				<div id="wallet-overview" class="">
+					<div class="row">
+						<div class="twelve columns">
+							<span id="balanceHeader" class="txt-wallet-blance">
+								5.21101117
+							</span>
+							<span class="txt-wallet-blance-currency">
+								RVN
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="six columns">
+							<span id="wallet-balance-change">+0.101028 RVN</span>&nbsp;<span>since last refresh</span>
+						</div>
+						<div class="six columns txt-right">
+							<span class="txt-wallet-ID txt-mono">
+								<a href="https://ravencoin.network/address/RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK" class="rvn-wallet" target="_blank">RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK<img src="img/icon_chainLink.svg" alt="View on chain" width="13" height="8"></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="wallet-details" class="">
+					<div class="row">
+						<div class="six columns">
+							<table id="wallet-summary-table" class="u-full-width">
+							  <thead>
+							    <tr>
+							      <th></th>
+							      <th>RVN</th>
+							      <th>USD*</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>Pending</td>
+							      <td>0.19564032</td>
+							      <td>$0.04</td>
+							    </tr>
+							    <tr>
+							      <td>Cleared</td>
+							      <td>5.01537085</td>
+							      <td>$1.03</td>
+							    </tr>
+							    <tr>
+							      <td>
+											<strong>
+												Total Balance
+											</strong>
+										</td>
+							      <td>
+											<strong>
+												5.21101117
+											</strong>
+										</td>
+							      <td>
+											<strong>
+												$1.07
+											</strong>
+										</td>
+							    </tr>
+							  </tbody>
+							</table>
+							<p class="txt-center">
+								<a href="#" id="btn-payout-history" class="button">HISTORY</a>
+							</p>
+							<table id="wallet-history-table" class="u-full-width">
+							  <tbody>
+							    <tr>
+							      <td>24h Earnings</td>
+							      <td>0.19564032</td>
+							      <td>$0.04</td>
+							    </tr>
+							    <tr>
+							      <td>3d Earnings</td>
+							      <td>5.01537085</td>
+							      <td>$1.03</td>
+							    </tr>
+							    <tr>
+							      <td>7d Earnings</td>
+							      <td>0.19564032</td>
+							      <td>$0.04</td>
+							    </tr>
+							    <tr>
+							      <td>14d Earnings</td>
+							      <td>5.01537085</td>
+							      <td>$1.03</td>
+							    </tr>
+							    <tr>
+							      <td>30d Earnings</td>
+							      <td>0.19564032</td>
+							      <td>$0.04</td>
+							    </tr>
+							    <tr>
+							      <td>90d Earnings</td>
+							      <td>5.01537085</td>
+							      <td>$1.03</td>
+							    </tr>
+							  </tbody>
+							</table>
+							<p>
+								* Based on: BTC/RVN=0.00000369 BTC, USD/BTC=$54609.41
+							</p>
+							<p>
+								<strong>Minimum payout for this wallet is 5 RVN</strong>
+							</p>
+						</div>
+						<div class="six columns">
+							<div class="card chart">
+								<canvas id="chart-last-24-hash" class="chart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
