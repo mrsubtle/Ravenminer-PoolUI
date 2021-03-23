@@ -52,6 +52,9 @@ body {
 	.txt-center {
 		text-align: center;
 	}
+	.txt-bold {
+		font-weight: bold;
+	}
 
 	/* ICONS */
 	.icon-inline {
@@ -142,6 +145,16 @@ body {
 		font-weight: bold;
 		background-color: rgba(255,255,255,0.15);
 	}
+	@media screen and (min-width: 0px) and (max-width: 400px) {
+		.tabs .tab {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 401px) and (max-width: 1024px) {
+		.tabs {
+			display: none;
+		}
+	}
 
 	#wallet-overview {
 		margin: 120px 0px 40px 0px;
@@ -158,6 +171,7 @@ body {
 		border-radius: 4px;
 		padding: 20px;
 		margin-bottom: 20px;
+		overflow: scroll;
 	}
 	.card .title {
 		font-size: 1.1em;
@@ -251,7 +265,29 @@ body {
 		background: #fff;
 	}
 
+	.share-status-immature {
+		border-radius: 3px;
+		color: #904960;
+	}
+	.LIGHT .share-status-cleared {
+		border-radius: 3px;
+		color: #2b2b2b;
+		opacity: 0.35;
+	}
+	.DARK .share-status-cleared {
+		border-radius: 3px;
+		color: #fff;
+		opacity: 0.25;
+	}
+
 /* LIGHT/DARK GENERAL THEMES */
+
+	.LIGHT .hide-DARK {
+		display: none;
+	}
+	.DARK .hide-LIGHT {
+		display: none;
+	}
 
 	.LIGHT body {
 		color: #2b2b2b;
