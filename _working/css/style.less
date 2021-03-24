@@ -1,8 +1,12 @@
 /*
 -- by RVNart (@smiling_monkee u/RVNart)
--- v0.1
+-- style.less v0.1
 -- Donate: RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK
 */
+
+@import "vars.less";
+@import "normalize.less"; //from core Skeleton normalize reset
+@import "skeleton.less"; //using https://raw.githubusercontent.com/WhatsNewSaes/Skeleton-Less/master/less/skeleton.less
 
 * {
 	box-sizing: border-box !important;
@@ -333,7 +337,7 @@ body {
 
 	.LIGHT .menu, .LIGHT footer {
 	    color: #fff;
-	    background: #904960;
+	    background: @b-plum;
 	}
 	.DARK .menu, .DARK footer {
 	    color: #fff;

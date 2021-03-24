@@ -17,18 +17,25 @@
   },
   "homepage": "https://ravencoin.network/address/RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK",
   "keywords": [
-    "Ravencoin", "RVN", "RavenMiner", "Cryptocurrency", "Crypto", "Crypto Miner", "Mining Pool", "RavenMiner Pool"
+    "Ravencoin",
+    "RVN",
+    "RavenMiner",
+    "Cryptocurrency",
+    "Crypto",
+    "Crypto Miner",
+    "Mining Pool",
+    "RavenMiner Pool"
   ],
   "devDependencies": {
     "grunt": "~1.2.0",
-    "grunt-contrib-concat": ">=0.5.1",
-    "grunt-contrib-copy": ">=0.7.0",
-    "grunt-contrib-jshint": ">=0.10.0",
-    "grunt-contrib-less": ">=1.0.0",
-    "grunt-contrib-nodeunit": ">=0.4.1",
-    "grunt-contrib-uglify": ">=0.5.0",
-    "grunt-contrib-watch": ">=0.6.1",
-    "grunt-http-server": ">=1.2.0",
-    "jit-grunt": ">=0.7.0"
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-http-server": "^1.4.0",
+    "jit-grunt": "^0.10.0"
   }
 }
