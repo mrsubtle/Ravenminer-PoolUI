@@ -1,0 +1,34 @@
+{
+  "name": "RavenMiner",
+  "version": "0.1.1",
+  "description": "RavenMiner Pool - Responsive Redesign",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RVNart (Rich)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrsubtle/RavenMiner-PoolUI"
+  },
+  "bugs": {
+    "url": "https://github.com/mrsubtle/RavenMiner-PoolUI/issues"
+  },
+  "homepage": "https://ravencoin.network/address/RUaPBaMg4JprNEr5x2C9NUyg12cLGzcWNK",
+  "keywords": [
+    "Ravencoin", "RVN", "RavenMiner", "Cryptocurrency", "Crypto", "Crypto Miner", "Mining Pool", "RavenMiner Pool"
+  ],
+  "devDependencies": {
+    "grunt": "~1.2.0",
+    "grunt-contrib-concat": ">=0.5.1",
+    "grunt-contrib-copy": ">=0.7.0",
+    "grunt-contrib-jshint": ">=0.10.0",
+    "grunt-contrib-less": ">=1.0.0",
+    "grunt-contrib-nodeunit": ">=0.4.1",
+    "grunt-contrib-uglify": ">=0.5.0",
+    "grunt-contrib-watch": ">=0.6.1",
+    "grunt-http-server": ">=1.2.0",
+    "jit-grunt": ">=0.7.0"
+  }
+}
